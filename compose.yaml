@@ -1,0 +1,17 @@
+services:
+  audit:
+    build: .
+    restart: unless-stopped
+    env_file: .env.production
+    environment:
+      DEBUG: "False"
+      AUDIT_REQUIRE_AUTH: "true"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./input:/app/input:ro
+      - audit-data:/app/data
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  audit-data:

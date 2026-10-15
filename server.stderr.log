@@ -1,0 +1,51 @@
+INFO:     Started server process [21372]
+INFO:     Waiting for application startup.
+2026-10-15 09:26:28,610 [INFO] audit_app: Initializing Specification Audit Engine services...
+2026-10-15 09:26:28,612 [INFO] app.services.database_service: Database initialized at C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\data\database\audit_history.db
+2026-10-15 09:26:28,613 [INFO] audit_app: Found mcat_data.zip in input folder. Extracting...
+2026-10-15 09:26:28,614 [INFO] app.services.zip_service: MCAT data already extracted and up to date.
+2026-10-15 09:26:28,694 [INFO] app.services.mcat_service: Loaded 250 Config/Key specifications for 42 MCAT IDs from C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\input\mcat_specifications.xlsx.
+2026-10-15 09:26:28,694 [INFO] app.services.mcat_service: MCAT data indexed: 42 authoritative Config/Key MCAT IDs found.
+2026-10-15 09:26:28,695 [INFO] audit_app: Found centralized_data.xlsx in input folder. Indexing...
+2026-10-15 09:26:28,695 [INFO] app.services.excel_service: Loading Excel file from C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\input\centralized_data.xlsx
+2026-10-15 09:26:31,189 [INFO] app.services.excel_service: Successfully loaded and indexed 126 products (140 search keys) from Excel.
+2026-10-15 09:26:31,190 [INFO] audit_app: Startup complete. Services ready.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-10-15 09:30:59,063 [INFO] app.services.zip_service: Extracting MCAT ZIP from C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\input\mcat_data.zip to C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\data\extracted_mcat
+2026-10-15 09:30:59,290 [INFO] app.services.zip_service: MCAT ZIP extraction completed successfully.
+2026-10-15 09:31:02,211 [INFO] app.services.mcat_service: Loaded 250 Config/Key specifications for 42 MCAT IDs from C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\input\mcat_specifications.xlsx.
+2026-10-15 09:31:02,212 [INFO] app.services.mcat_service: MCAT data indexed: 42 authoritative Config/Key MCAT IDs found.
+2026-10-15 09:31:02,212 [INFO] app.services.excel_service: Loading Excel file from C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\input\centralized_data.xlsx
+2026-10-15 09:31:05,521 [INFO] app.services.excel_service: Successfully loaded and indexed 126 products (252 search keys) from Excel.
+2026-10-15 09:32:26,194 [INFO] app.services.pdf_service: Downloading PDF from https://bezares.com/wp-content/uploads/2020/06/FR-FRB-includin-small-5-8-gal.pdf
+2026-10-15 09:32:27,862 [INFO] httpx: HTTP Request: GET https://bezares.com/wp-content/uploads/2020/06/FR-FRB-includin-small-5-8-gal.pdf "HTTP/1.1 200 OK"
+2026-10-15 09:32:27,990 [INFO] app.services.pdf_service: PDF saved to C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\data\downloaded_pdfs\var_113_mcat_Eaton_Piston_Pumps_0a1a8af492.pdf (360953 bytes) from https://bezares.com/wp-content/uploads/2020/06/FR-FRB-includin-small-5-8-gal.pdf
+2026-10-15 09:32:28,057 [INFO] app.services.pdf_service: Extracting 2 pages from PDF var_113_mcat_Eaton_Piston_Pumps_0a1a8af492.pdf
+2026-10-15 09:32:38,435 [INFO] app.services.pdf_service: Downloading PDF from https://www.eaton.com/content/dam/eaton/products/transmissions/mobile-power/Bezares-product-catalog-APSL0322.pdf
+2026-10-15 09:32:40,157 [INFO] httpx: HTTP Request: GET https://www.eaton.com/content/dam/eaton/products/transmissions/mobile-power/Bezares-product-catalog-APSL0322.pdf "HTTP/1.1 200 OK"
+2026-10-15 09:32:41,190 [INFO] app.services.pdf_service: PDF saved to C:\Users\Imart\Downloads\audit-tool-v2.3\colleague-audit-tool\data\downloaded_pdfs\var_113_mcat_Eaton_Piston_Pumps_ad9c9ed034.pdf (2289208 bytes) from https://www.eaton.com/content/dam/eaton/products/transmissions/mobile-power/Bezares-product-catalog-APSL0322.pdf
+2026-10-15 09:32:41,226 [INFO] app.services.pdf_service: Extracting 24 pages from PDF var_113_mcat_Eaton_Piston_Pumps_ad9c9ed034.pdf
+2026-10-15 09:32:42,443 [INFO] app.services.pdf_service: OCR unavailable for page 3: No tessdata specified and Tesseract is not installed
+2026-10-15 09:32:53,995 [INFO] app.services.pdp_service: Fetching PDP from https://eaton.com/us/en-us/catalog/bezares-pumps/bezares-fr-bent-axis-piston-pump.html
+2026-10-15 09:32:55,667 [INFO] httpx: HTTP Request: GET https://eaton.com/us/en-us/catalog/bezares-pumps/bezares-fr-bent-axis-piston-pump.html "HTTP/1.1 301 Moved Permanently"
+2026-10-15 09:33:17,371 [ERROR] app.services.pdp_service: Error fetching PDP https://eaton.com/us/en-us/catalog/bezares-pumps/bezares-fr-bent-axis-piston-pump.html: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-15 09:33:17,372 [INFO] app.services.pdp_service: Fetching PDP from https://www.eaton.com/us/en-us/skuPage.PT5042806.html
+2026-10-15 09:33:47,917 [ERROR] app.services.pdp_service: Error fetching PDP https://www.eaton.com/us/en-us/skuPage.PT5042806.html: The read operation timed out
+2026-10-15 09:33:48,927 [INFO] app.services.llm_service: Rendered 2 PDF pages for gateway at 1.40x/q76 (328504 encoded chars; ~82126 text-equivalent tokens).
+2026-10-15 09:33:53,678 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 09:34:08,739 [INFO] app.services.llm_service: Rendered 12 PDF pages for gateway at 1.40x/q76 (1315888 encoded chars; ~328972 text-equivalent tokens).
+2026-10-15 09:34:17,437 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 09:34:25,806 [INFO] app.services.llm_service: Rendered 2 PDF pages for gateway at 1.40x/q76 (328504 encoded chars; ~82126 text-equivalent tokens).
+2026-10-15 09:34:29,916 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 09:34:51,445 [INFO] app.services.llm_service: Rendered 12 PDF pages for gateway at 1.40x/q76 (1315888 encoded chars; ~328972 text-equivalent tokens).
+2026-10-15 09:34:58,832 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 09:35:04,302 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 09:35:28,509 [INFO] app.services.database_service: Audit b4f14ce3 successfully saved to SQLite.
+2026-10-15 12:25:33,876 [INFO] app.services.pdp_service: Fetching PDP from https://www.beyondmedtech.com/product/syringe-pump-byz-810-series-2
+2026-10-15 12:25:38,253 [INFO] httpx: HTTP Request: GET https://www.beyondmedtech.com/product/syringe-pump-byz-810-series-2 "HTTP/1.1 200 OK"
+2026-10-15 12:25:40,401 [INFO] app.services.pdp_service: Successfully extracted PDP data for https://www.beyondmedtech.com/product/syringe-pump-byz-810-series-2
+2026-10-15 12:25:44,969 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 12:26:07,301 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 12:26:39,837 [INFO] httpx: HTTP Request: POST https://openrouter.ai/api/v1/responses "HTTP/1.1 200 OK"
+2026-10-15 12:27:24,855 [INFO] app.services.database_service: Audit a58162ea successfully saved to SQLite.

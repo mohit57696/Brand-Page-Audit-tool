@@ -1,0 +1,21 @@
+GitHub repository: https://github.com/mohit57696/audit-tool
+Visibility: private. Hosting is not configured.
+
+PUBLISH OR UPDATE THIS LOCAL REPOSITORY
+Open a terminal inside the colleague-audit-tool folder and run:
+   git push -u origin main
+Complete GitHub sign-in if Git asks for it.
+The origin remote points to https://github.com/mohit57696/audit-tool.git.
+
+CLONE ON ANOTHER COMPUTER
+   git clone https://github.com/mohit57696/audit-tool.git
+   cd audit-tool
+Then follow README.md and run Setup.bat on Windows.
+Access to the private repository requires the owner account or collaborator access.
+
+API keys, input spreadsheets, audit history, cached evidence, and installed
+packages are excluded from Git. Obtain input files from the separate colleague
+handoff ZIP and configure your own API key locally.
+
+GitHub Actions validates new pushes. Production hosting can be added later;
+see PRODUCTION.md. GitHub Pages cannot run this application's Python backend.

@@ -1,0 +1,13 @@
+.git
+.venv
+**/node_modules
+**/__pycache__
+**/.npm-cache
+**/.env
+**/.env.*
+input
+data
+*.zip
+*.log
+*.pid
+frontend/dist

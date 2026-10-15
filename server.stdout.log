@@ -1,0 +1,13 @@
+Starting Specification Audit Backend on http://127.0.0.1:8000
+INFO:     127.0.0.1:59674 - "GET /api/system/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63515 - "POST /api/system/rescan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63515 - "GET /api/variants/lookup?variant_id=110 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51736 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59271 - "GET /assets/index-C6cDaqVY.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51736 - "GET /assets/index-tx-3NZUp.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59271 - "GET /api/system/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51906 - "GET /api/variants/lookup?variant_id=113&match_index=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51906 - "GET /api/audit/run-stream?variant_id=113&match_index=0&force_refresh=false HTTP/1.1" 200 OK
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+INFO:     127.0.0.1:56805 - "GET /api/variants/lookup?variant_id=122&match_index=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56805 - "GET /api/audit/run-stream?variant_id=122&match_index=0&force_refresh=false HTTP/1.1" 200 OK
